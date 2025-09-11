@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+.login-page {
+  min-height: 100vh;
+  background: rgba(244, 245, 246, 1);
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Шапка */
+.login-header {
+  height: 64px;
+  background: rgba(255, 255, 255, 1);
+  display: flex;
+  align-items: center;
+  padding-left: 120px;
+}
+
+.login-logo {
+  height: 19px; /* 64px - 23px - 22px = 19px */
+  width: auto;
+}
+
+/* Контейнер для центрирования формы */
+.login-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 169px;
+  padding-bottom: 233px;
+}
+
+/* Рамка окна входа */
+.login-form-container {
+  width: 379px;
+  height: 334px;
+  border-radius: 30px;
+  box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+  background: rgba(255, 255, 255, 1);
+  padding: 32px 34px 32px 32px;
+  box-sizing: border-box;
+}
+
+/* Рамка окна входа при ошибке */
+.login-form-container.error {
+  height: 382px;
+}
+
+/* Заголовок "Вход" */
+.login-title {
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  margin: 0 0 24px 0;
+}
+
+/* Форма */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Группа полей */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Поля ввода */
+.form-input {
+  width: 313px;
+  height: 39px;
+  box-sizing: border-box;
+  border: 0.5px solid rgba(153, 153, 153, 1);
+  border-radius: 6px;
+  padding: 0 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 1);
+  background: rgba(255, 255, 255, 1);
+  transition: all 0.2s ease;
+}
+
+/* Состояние при фокусе (вводе) */
+.form-input:focus {
+  outline: none;
+  border: 0.5px solid rgba(115, 52, 234, 1);
+  background: rgba(241, 235, 253, 1);
+}
+
+/* Состояние при вводе (когда есть текст) */
+.form-input:not(:placeholder-shown) {
+  border: 0.5px solid rgba(115, 52, 234, 1);
+  background: rgba(241, 235, 253, 1);
+}
+
+/* Состояние ошибки */
+.form-input.error {
+  border: 0.5px solid rgba(242, 80, 80, 1);
+  background: rgba(255, 235, 235, 1);
+}
+
+.form-input.error:focus {
+  border: 0.5px solid rgba(242, 80, 80, 1);
+  background: rgba(255, 235, 235, 1);
+}
+
+.form-input::placeholder {
+  color: rgba(153, 153, 153, 1);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+/* Сообщение об ошибке */
+.error-message {
+  color: rgba(248, 77, 77, 1);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+/* Кнопка "Войти" */
+.login-button {
+  width: 313px;
+  height: 39px;
+  background: rgba(115, 52, 234, 1);
+  border: none;
+  border-radius: 6px;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background-color 0.2s;
+}
+
+.login-button:hover:not(.disabled) {
+  background: rgba(100, 45, 200, 1);
+}
+
+/* Состояние кнопки при ошибке */
+.login-button.disabled {
+  background: rgba(153, 153, 153, 1);
+  cursor: not-allowed;
+}
+
+/* Ссылка на регистрацию */
+.register-link {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.register-link p {
+  color: rgba(153, 153, 153, 1);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0px;
+  margin: 0;
+}
+
+.register-link-text {
+  color: rgba(153, 153, 153, 1);
+  text-decoration: underline;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0px;
+  display: block;
+  margin-top: 4px;
+}
+
+.register-link-text:hover {
+  color: rgba(115, 52, 234, 1);
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+  .login-page {
+    background: rgba(255, 255, 255, 1);
+  }
+  
+  .login-header {
+    height: 64px;
+    background: rgba(244, 245, 246, 1);
+    padding-left: 16px;
+  }
+  
+  .login-container {
+    padding: 0;
+    padding-top: 151px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  
+  .login-form-container {
+    width: 100%;
+    max-width: 343px;
+    height: auto;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+    padding: 0;
+    margin: 0 auto;
+  }
+  
+  .login-form-container.error {
+    height: auto;
+  }
+  
+  .login-title {
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    margin: 0 0 24px 0;
+  }
+  
+  .login-form {
+    gap: 12px;
+  }
+  
+  .form-input {
+    width: 343px;
+    height: 39px;
+    border: 0.5px solid rgba(153, 153, 153, 1);
+    border-radius: 6px;
+    padding: 0 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 1);
+    background: rgba(255, 255, 255, 1);
+  }
+  
+  .form-input::placeholder {
+    color: rgba(153, 153, 153, 1);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  
+  .login-button {
+    width: 343px;
+    height: 39px;
+    background: rgba(115, 52, 234, 1);
+    border: none;
+    border-radius: 6px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-top: 24px;
+  }
+  
+  .register-link {
+    margin-top: 24px;
+    text-align: center;
+  }
+  
+  .register-link p {
+    color: rgba(153, 153, 153, 1);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0px;
+    margin: 0;
+  }
+  
+  .register-link-text {
+    color: rgba(153, 153, 153, 1);
+    text-decoration: underline;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0px;
+    display: block;
+    margin-top: 4px;
+  }
+  
+  /* Мобильная версия при ошибке */
+  .login-page.error .login-container {
+    padding-top: 127px;
+  }
+}
