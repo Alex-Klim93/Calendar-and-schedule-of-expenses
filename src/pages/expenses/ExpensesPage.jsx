@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ExpensesPage = () => {
+export const ExpensesPage = () => {
   return (
     <div className="expenses-page">
       <h2>Мои расходы</h2>
@@ -10,5 +10,3 @@ const ExpensesPage = () => {
     </div>
   );
 };
-
-export default ExpensesPage;

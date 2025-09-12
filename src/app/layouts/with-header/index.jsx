@@ -1,16 +1,13 @@
-import React from 'react';
 import { Outlet } from 'react-router-dom';
-import Header from '../shared/ui/Header/Header';
+import { Header } from '@/shared/ui/header';
 
-const Layout = () => {
+export const Layout = () => {
   return (
     <div className="layout">
-      <Header />
+      <Header isMain={true} />
       <main className="main-content">
         <Outlet />
       </main>
     </div>
   );
 };
-
-export default Layout;

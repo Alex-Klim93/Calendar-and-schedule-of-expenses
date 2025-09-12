@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../shared/assets/images/logo.svg';
+import { Header } from '@/shared/ui/header';
 import './RegisterPage.css';
 
-const RegisterPage = () => {
+export const RegisterPage = () => {
   const [showError, setShowError] = useState(false);
 
   const handleSubmit = (e) => {
@@ -14,14 +14,12 @@ const RegisterPage = () => {
 
   return (
     <div className={`register-page ${showError ? 'error' : ''}`}>
-      <header className="register-header">
-        <img src={logo} alt="SkyproWallet" className="register-logo" />
-      </header>
-      
+      <Header />
+
       <div className="register-container">
         <div className={`register-form-container ${showError ? 'error' : ''}`}>
           <h1 className="register-title">Регистрация</h1>
-          
+
           <form className="register-form" onSubmit={handleSubmit} noValidate>
             <div className="form-group">
               <input
@@ -32,7 +30,7 @@ const RegisterPage = () => {
                 placeholder="Имя"
               />
             </div>
-            
+
             <div className="form-group">
               <input
                 type="email"
@@ -42,7 +40,7 @@ const RegisterPage = () => {
                 placeholder="Эл. почта"
               />
             </div>
-            
+
             <div className="form-group">
               <input
                 type="password"
@@ -53,22 +51,24 @@ const RegisterPage = () => {
               />
               {showError && (
                 <div className="error-message">
-                  Упс! Введенные вами данные некорректны. Введите данные корректно и повторите попытку.
+                  Упс! Введенные вами данные некорректны. Введите данные
+                  корректно и повторите попытку.
                 </div>
               )}
             </div>
-            
-            <button 
-              type="submit" 
+
+            <button
+              type="submit"
               className={`register-button ${showError ? 'disabled' : ''}`}
             >
               Зарегистрироваться
             </button>
           </form>
-          
+
           <div className="login-link">
             <p>
-              Уже есть аккаунт?<br />
+              Уже есть аккаунт?
+              <br />
               <Link to="/login" className="login-link-text">
                 Войдите здесь
               </Link>
@@ -79,5 +79,3 @@ const RegisterPage = () => {
     </div>
   );
 };
-
-export default RegisterPage;
