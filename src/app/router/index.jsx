@@ -1,17 +1,16 @@
-import React from 'react';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   Navigate,
 } from 'react-router-dom';
-import Layout from './app/Layout';
-import LoginPage from './pages/login/LoginPage';
-import RegisterPage from './pages/register/RegisterPage';
-import ExpensesPage from './pages/expenses/ExpensesPage';
-import AnalysisPage from './pages/analysis/AnalysisPage';
+import { Layout } from '../layouts';
+import { LoginPage } from '@/pages/login/LoginPage';
+import { RegisterPage } from '@/pages/register/RegisterPage';
+import { ExpensesPage } from '@/pages/expenses/ExpensesPage';
+import { AnalysisPage } from '@/pages/analysis/AnalysisPage';
 
-function App() {
+export function AppRouter() {
   return (
     <Router>
       <Routes>
@@ -32,5 +31,3 @@ function App() {
     </Router>
   );
 }
-
-export default App;

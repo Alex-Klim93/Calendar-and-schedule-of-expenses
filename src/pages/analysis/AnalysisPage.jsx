@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AnalysisPage = () => {
+export const AnalysisPage = () => {
   return (
     <div className="analysis-page">
       <h2>Анализ расходов</h2>
@@ -10,5 +10,3 @@ const AnalysisPage = () => {
     </div>
   );
 };
-
-export default AnalysisPage;

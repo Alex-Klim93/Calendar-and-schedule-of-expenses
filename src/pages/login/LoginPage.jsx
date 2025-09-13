@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../shared/assets/images/logo.svg';
 import './LoginPage.css';
+import { Header } from '@/shared/ui/header';
 
-const LoginPage = () => {
+export const LoginPage = () => {
   const [showError, setShowError] = useState(false);
 
   const handleSubmit = (e) => {
@@ -14,14 +14,12 @@ const LoginPage = () => {
 
   return (
     <div className={`login-page ${showError ? 'error' : ''}`}>
-      <header className="login-header">
-        <img src={logo} alt="SkyproWallet" className="login-logo" />
-      </header>
-      
+      <Header />
+
       <div className="login-container">
         <div className={`login-form-container ${showError ? 'error' : ''}`}>
           <h1 className="login-title">Вход</h1>
-          
+
           <form className="login-form" onSubmit={handleSubmit} noValidate>
             <div className="form-group">
               <input
@@ -32,7 +30,7 @@ const LoginPage = () => {
                 placeholder="Эл. почта"
               />
             </div>
-            
+
             <div className="form-group">
               <input
                 type="password"
@@ -43,22 +41,24 @@ const LoginPage = () => {
               />
               {showError && (
                 <div className="error-message">
-                  Упс! Введенные вами данные некорректны. Введите данные корректно и повторите попытку.
+                  Упс! Введенные вами данные некорректны. Введите данные
+                  корректно и повторите попытку.
                 </div>
               )}
             </div>
-            
-            <button 
-              type="submit" 
+
+            <button
+              type="submit"
               className={`login-button ${showError ? 'disabled' : ''}`}
             >
               Войти
             </button>
           </form>
-          
+
           <div className="register-link">
             <p>
-              Нужно зарегистрироваться?<br />
+              Нужно зарегистрироваться?
+              <br />
               <Link to="/register" className="register-link-text">
                 Регистрируйтесь здесь
               </Link>
@@ -69,5 +69,3 @@ const LoginPage = () => {
     </div>
   );
 };
-
-export default LoginPage;
