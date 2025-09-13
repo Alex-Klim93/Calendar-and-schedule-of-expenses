@@ -18,23 +18,27 @@
     list-style: none;
 }
 
-.menu__item:hover {
-    font-weight: 600;
-    padding: 2px;
-    border-bottom: 1px solid #7334ea;
-}
-
 .menu__link {
     color: #000;
     text-decoration: none;
 }
 
 .menu__link:hover {
+    font-weight: 600;
+    border-bottom: 1px solid #7334ea;
     color: #7334ea;
+}
+
+.exit {
+    cursor: pointer;
 }
 
 .exit__text {
     font-weight: 600;
     font-size: 14px;
     color: #000;
+}
+
+.exit__text:hover {
+    color: #7334ea;
 }

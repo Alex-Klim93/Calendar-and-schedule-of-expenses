@@ -4,11 +4,11 @@ import {
   Route,
   Navigate,
 } from 'react-router-dom';
-import { Layout } from "../layouts";
-import LoginPage from '@/pages/login/LoginPage';
-import RegisterPage from '@/pages/register/RegisterPage';
-import ExpensesPage from '@/pages/expenses/ExpensesPage';
-import AnalysisPage from '@/pages/analysis/AnalysisPage';
+import { Layout } from '../layouts';
+import { LoginPage } from '@/pages/login/LoginPage';
+import { RegisterPage } from '@/pages/register/RegisterPage';
+import { ExpensesPage } from '@/pages/expenses/ExpensesPage';
+import { AnalysisPage } from '@/pages/analysis/AnalysisPage';
 
 export function AppRouter() {
   return (
