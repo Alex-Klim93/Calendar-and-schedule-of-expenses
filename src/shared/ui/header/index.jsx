@@ -20,7 +20,7 @@ export const Header = ({ isMain = false }) => {
           </nav>
 
           <div className={styles.exit}>
-            <p className={styles.exit__text}>Выход</p>
+            <p className={styles.exit__text}>Выйти</p>
           </div>
         </>
       ) : null}

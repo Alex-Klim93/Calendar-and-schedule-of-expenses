@@ -15,152 +15,19 @@ export function ExpensesTable() {
         <div className={styles.line}></div>
 
         <div className={styles.table__expenses}>
-          <div className={styles.expenses__item}>
-            <div className={styles.item__description}>Пятерочка</div>
-            <div className={styles.item__category}>Еда</div>
-            <div className={styles.item__date}>03.07.2024</div>
-            <div className={styles.item__sum}>3 500 ₽</div>
-            <div className={cn(styles.item__delete, styles.col5)}>
-              <img src="/common/bag.svg" alt="Удалить" />
-            </div>
-          </div>
-
-          <div className={styles.expenses__item}>
-            <div className={styles.item__description}>Пятерочка</div>
-            <div className={styles.item__category}>Еда</div>
-            <div className={styles.item__date}>03.07.2024</div>
-            <div className={styles.item__sum}>3 500 ₽</div>
-            <div className={cn(styles.item__delete, styles.col5)}>
-              <img src="/common/bag.svg" alt="Удалить" />
-            </div>
-          </div>
-
-          <div className={styles.expenses__item}>
-            <div className={styles.item__description}>Пятерочка</div>
-            <div className={styles.item__category}>Еда</div>
-            <div className={styles.item__date}>03.07.2024</div>
-            <div className={styles.item__sum}>3 500 ₽</div>
-            <div className={cn(styles.item__delete, styles.col5)}>
-              <img src="/common/bag.svg" alt="Удалить" />
-            </div>
-          </div>
-          <div className={styles.expenses__item}>
-            <div className={styles.item__description}>Пятерочка</div>
-            <div className={styles.item__category}>Еда</div>
-            <div className={styles.item__date}>03.07.2024</div>
-            <div className={styles.item__sum}>3 500 ₽</div>
-            <div className={cn(styles.item__delete, styles.col5)}>
-              <img src="/common/bag.svg" alt="Удалить" />
-            </div>
-          </div>
-          <div className={styles.expenses__item}>
-            <div className={styles.item__description}>Пятерочка</div>
-            <div className={styles.item__category}>Еда</div>
-            <div className={styles.item__date}>03.07.2024</div>
-            <div className={styles.item__sum}>3 500 ₽</div>
-            <div className={cn(styles.item__delete, styles.col5)}>
-              <img src="/common/bag.svg" alt="Удалить" />
-            </div>
-          </div>
-          <div className={styles.expenses__item}>
-            <div className={styles.item__description}>Пятерочка</div>
-            <div className={styles.item__category}>Еда</div>
-            <div className={styles.item__date}>03.07.2024</div>
-            <div className={styles.item__sum}>3 500 ₽</div>
-            <div className={cn(styles.item__delete, styles.col5)}>
-              <img src="/common/bag.svg" alt="Удалить" />
-            </div>
-          </div>
-                    <div className={styles.expenses__item}>
-            <div className={styles.item__description}>Пятерочка</div>
-            <div className={styles.item__category}>Еда</div>
-            <div className={styles.item__date}>03.07.2024</div>
-            <div className={styles.item__sum}>3 500 ₽</div>
-            <div className={cn(styles.item__delete, styles.col5)}>
-              <img src="/common/bag.svg" alt="Удалить" />
-            </div>
-          </div>
-                    <div className={styles.expenses__item}>
-            <div className={styles.item__description}>Пятерочка</div>
-            <div className={styles.item__category}>Еда</div>
-            <div className={styles.item__date}>03.07.2024</div>
-            <div className={styles.item__sum}>3 500 ₽</div>
-            <div className={cn(styles.item__delete, styles.col5)}>
-              <img src="/common/bag.svg" alt="Удалить" />
-            </div>
-          </div>
-                    <div className={styles.expenses__item}>
-            <div className={styles.item__description}>Пятерочка</div>
-            <div className={styles.item__category}>Еда</div>
-            <div className={styles.item__date}>03.07.2024</div>
-            <div className={styles.item__sum}>3 500 ₽</div>
-            <div className={cn(styles.item__delete, styles.col5)}>
-              <img src="/common/bag.svg" alt="Удалить" />
-            </div>
-          </div>
-                    <div className={styles.expenses__item}>
-            <div className={styles.item__description}>Пятерочка</div>
-            <div className={styles.item__category}>Еда</div>
-            <div className={styles.item__date}>03.07.2024</div>
-            <div className={styles.item__sum}>3 500 ₽</div>
-            <div className={cn(styles.item__delete, styles.col5)}>
-              <img src="/common/bag.svg" alt="Удалить" />
-            </div>
-          </div>
-                    <div className={styles.expenses__item}>
-            <div className={styles.item__description}>Пятерочка</div>
-            <div className={styles.item__category}>Еда</div>
-            <div className={styles.item__date}>03.07.2024</div>
-            <div className={styles.item__sum}>3 500 ₽</div>
-            <div className={cn(styles.item__delete, styles.col5)}>
-              <img src="/common/bag.svg" alt="Удалить" />
-            </div>
-          </div>
-                    <div className={styles.expenses__item}>
-            <div className={styles.item__description}>Пятерочка</div>
-            <div className={styles.item__category}>Еда</div>
-            <div className={styles.item__date}>03.07.2024</div>
-            <div className={styles.item__sum}>3 500 ₽</div>
-            <div className={cn(styles.item__delete, styles.col5)}>
-              <img src="/common/bag.svg" alt="Удалить" />
-            </div>
-          </div>
-                    <div className={styles.expenses__item}>
-            <div className={styles.item__description}>Пятерочка</div>
-            <div className={styles.item__category}>Еда</div>
-            <div className={styles.item__date}>03.07.2024</div>
-            <div className={styles.item__sum}>3 500 ₽</div>
-            <div className={cn(styles.item__delete, styles.col5)}>
-              <img src="/common/bag.svg" alt="Удалить" />
-            </div>
-          </div>
-                    <div className={styles.expenses__item}>
-            <div className={styles.item__description}>Пятерочка</div>
-            <div className={styles.item__category}>Еда</div>
-            <div className={styles.item__date}>03.07.2024</div>
-            <div className={styles.item__sum}>3 500 ₽</div>
-            <div className={cn(styles.item__delete, styles.col5)}>
-              <img src="/common/bag.svg" alt="Удалить" />
-            </div>
-          </div>
-                    <div className={styles.expenses__item}>
-            <div className={styles.item__description}>Пятерочка</div>
-            <div className={styles.item__category}>Еда</div>
-            <div className={styles.item__date}>03.07.2024</div>
-            <div className={styles.item__sum}>3 500 ₽</div>
-            <div className={cn(styles.item__delete, styles.col5)}>
-              <img src="/common/bag.svg" alt="Удалить" />
-            </div>
-          </div>
-                    <div className={styles.expenses__item}>
-            <div className={styles.item__description}>Пятерочка</div>
-            <div className={styles.item__category}>Еда</div>
-            <div className={styles.item__date}>03.07.2024</div>
-            <div className={styles.item__sum}>3 500 ₽</div>
-            <div className={cn(styles.item__delete, styles.col5)}>
-              <img src="/common/bag.svg" alt="Удалить" />
-            </div>
-          </div>
+          {Array(18)
+            .fill(null)
+            .map((_, index) => (
+              <div key={index} className={styles.expenses__item}>
+                <div className={styles.item__description}>Пятерочка</div>
+                <div className={styles.item__category}>Еда</div>
+                <div className={styles.item__date}>03.07.2024</div>
+                <div className={styles.item__sum}>3 500 ₽</div>
+                <div className={cn(styles.item__delete, styles.col5)}>
+                  <img src="/common/bag.svg" alt="Удалить" />
+                </div>
+              </div>
+            ))}
         </div>
       </div>
     </div>
