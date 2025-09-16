@@ -1,11 +1,11 @@
 import { useForm } from 'react-hook-form';
 import cn from 'classnames';
 
+import { FormCheckbox } from '@/shared/ui/checkbox';
 import { FormItem } from '@/shared/ui/input';
 import { category } from '../config';
 
 import styles from './style.module.css';
-import { FormCheckbox } from '@/shared/ui/checkbox';
 
 export function ExpensesForm() {
   const {
