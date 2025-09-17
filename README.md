@@ -1,58 +1,12 @@
-# SkyproWallet
+# React + Vite
 
-Удобный и функциональный кошелек для учета расходов.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Описание проекта
+Currently, two official plugins are available:
 
-SkyproWallet - это веб-приложение для управления личными финансами, разработанное с использованием React.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Функциональность
+## Expanding the ESLint configuration
 
-- 🔐 Авторизация и регистрация пользователей
-- 💰 Учет расходов с возможностью добавления новых трат
-- 📊 Анализ расходов с календарем и диаграммами
-- 📱 Адаптивный дизайн
-
-## Технологии
-
-- React
-- Vite
-- React Router DOM
-- Axios
-- ESLint
-- Prettier
-
-## Структура проекта
-
-Проект использует архитектуру Feature-Sliced Design (FSD) для лучшей организации кода.
-
-## Установка и запуск
-
-```bash
-# Клонирование репозитория
-git clone <repository-url>
-
-# Переход в директорию проекта
-cd SkyproWallet
-
-# Переключение на ветку разработки
-git checkout dev
-
-# Установка зависимостей
-npm install
-
-# Запуск в режиме разработки
-npm run dev
-```
-
-## Ветки
-
-- `main` - основная ветка с README
-- `dev` - ветка разработки с настроенным проектом
-
-## Рабочий процесс
-
-1. Создавайте feature ветки от `dev`
-2. Работайте в своих feature ветках
-3. Сливайте изменения в `dev` после проверки
-4. Из `dev` изменения попадают в `main` после релиза
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
